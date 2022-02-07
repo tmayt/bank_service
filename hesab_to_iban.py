@@ -2,7 +2,6 @@ import tkinter as tk
 from azbankintro import *
 from functools import partial
 
-
 hint = '''
     'BMI' # meli
     'SEP' #saman
@@ -25,17 +24,13 @@ hint = '''
     'TT_BANK' # tose e ta aavon
     'AYANDEH_BANK' # ayandeh
 '''
-
 print(hint)
 
 bank_type = BankEnum(input('bank type ==> '))
 
-
 root = tk.Tk()
 # specify size of window.
 root.geometry("500x300")
-
-
 
 # Create text widget and specify size.
 T = tk.Text(root, height = 1, width = 52,padx = 10, pady = 10)
@@ -53,8 +48,6 @@ def hesab_to_iban():
 
 # Create button for next text.
 b1 = tk.Button(root, text = "submit",command = hesab_to_iban ,width=30, height=2 )
-
-
 
 l.pack()
 T.pack()
